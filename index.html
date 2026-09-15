@@ -17,7 +17,6 @@
   <meta name="apple-mobile-web-app-title" content="周润发">
 
   <link rel="stylesheet" href="/main.css">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4818173_31j0l3eaeg4.css">
 </head>
 
 <body id="body">
@@ -38,7 +37,11 @@
       <div class="nav-right">
         <a href="https://blog.zrf.me/" class="nav-item" target="_blank">博客</a>
         <a href="https://d.zrf.me/tgq/" class="nav-item" target="_blank">群组</a>
-        <a class="nav-menu" id="nav-menu"><span class="iconfont icon-list-ul"></span></a>
+        <a class="nav-menu" id="nav-menu" aria-label="打开菜单">
+          <svg class="nav-menu-icon" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+            <path transform="translate(0 896)" d="M128-608Q168-608 196-636Q224-664 224-704Q224-744 196-772Q168-800 128-800Q88-800 60-772Q32-744 32-704Q32-664 60-636Q88-608 128-608M960-768L384-768Q357-768 338.500-749.500Q320-731 320-704Q320-677 338.500-658.500Q357-640 384-640L960-640Q987-640 1005.500-658.500Q1024-677 1024-704Q1024-731 1005.500-749.500Q987-768 960-768M960-448L384-448Q357-448 338.500-429.500Q320-411 320-384Q320-357 338.500-338.500Q357-320 384-320L960-320Q987-320 1005.500-338.500Q1024-357 1024-384Q1024-411 1005.500-429.500Q987-448 960-448M960-128L384-128Q357-128 338.500-109.500Q320-91 320-64Q320-37 338.500-18.500Q357 0 384 0L960 0Q987 0 1005.500-18.500Q1024-37 1024-64Q1024-91 1005.500-109.500Q987-128 960-128M128 32Q168 32 196 4Q224-24 224-64Q224-104 196-132Q168-160 128-160Q88-160 60-132Q32-104 32-64Q32-24 60 4Q88 32 128 32M224-384Q224-424 196-452Q168-480 128-480Q88-480 60-452Q32-424 32-384Q32-344 60-316Q88-288 128-288Q168-288 196-316Q224-344 224-384"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -61,11 +64,15 @@
       </div>
       <div class="first-stack-links">
         <a href="https://blog.zrf.me/about/" class="about-button" target="_blank">了解更多</a>
-        <a href="https://d.zrf.me/github-zrf" class="about-button social-button" target="_blank">
-          <i class="iconfont icon-github"></i>
+        <a href="https://d.zrf.me/github-zrf" class="about-button social-button" target="_blank" aria-label="GitHub">
+          <svg class="social-icon" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+            <path transform="translate(0 896)" d="M348-101Q348-98 345-96Q342-94 337.500-94Q333-94 329.500-96Q326-98 326-101Q326-104 329-106Q332-108 336.500-108.500Q341-109 344.500-107Q348-105 348-101M286-110Q285-107 287.500-104Q290-101 294-100Q298-99 302-100Q306-101 307-104Q308-107 305-110Q302-113 298-114.500Q294-116 290.500-114.500Q287-113 286-110M374-114Q370-113 367-110Q364-107 364.500-104Q365-101 368.500-99.500Q372-98 376.500-99Q381-100 383.500-102.500Q386-105 385.500-108Q385-111 381.500-112.500Q378-114 374-114M506-880Q369-880 255-815Q145-752 81-642Q16-529 16-392Q16-283 60-184Q102-89 179-18Q256 53 355 86Q372 90 382 81Q390 74 390 62L389-61L367-57Q339-54 315-57Q281-60 258-73Q230-89 220-120L212-136Q203-154 193-168Q179-187 164-193L154-202Q144-211 145-216Q145-224 167-224L181-221Q198-217 212-207Q232-194 244-173Q273-122 323-118Q356-115 390-131Q397-175 422-198Q368-204 340-211Q296-221 268-241Q234-265 217-305Q198-350 198-419Q198-458 209-486Q219-509 245-537Q237-557 235-584Q232-628 250-673Q276-681 335-651Q364-636 388-619Q449-636 513.500-636Q578-636 639-619L666-636Q697-655 723-665Q759-679 777-673Q795-628 792-584Q790-557 782-537Q810-507 820-485Q834-457 834-419Q834-350 814-305Q796-265 761-241Q732-221 687-211Q660-204 604-198Q620-185 628-164Q638-138 638-105L638 62Q638 73 646 80Q655 89 672 86Q772 53 848-17.500Q924-88 965-184Q1008-282 1008-392Q1008-528 939-642Q873-752 759-815Q643-880 506-880M210-190Q208-189 208.500-186Q209-183 211.500-180Q214-177 217-176.500Q220-176 222-177.500Q224-179 223.500-182Q223-185 220.500-188Q218-191 215-191.500Q212-192 210-190M189-206Q186-202 193-199Q196-197 198.500-197.500Q201-198 202-200Q204-204 197.500-207Q191-210 189-206M254-135Q251-133 252-129.500Q253-126 256.500-122.500Q260-119 263.500-118.500Q267-118 269-120.500Q271-123 270.500-126.500Q270-130 266.500-133.500Q263-137 259.500-137.500Q256-138 254-135M231-165Q228-163 228-159.500Q228-156 230.500-152.500Q233-149 236.500-148Q240-147 242-148.500Q244-150 244-153.500Q244-157 242-160.500Q240-164 236.500-165.500Q233-167 231-165"/>
+          </svg>
         </a>
-        <a href="mailto:zrf@zrf.me" class="about-button social-button">
-          <i class="iconfont icon-envelope"></i>
+        <a href="mailto:zrf@zrf.me" class="about-button social-button" aria-label="发送邮件">
+          <svg class="social-icon" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+            <path transform="translate(0 896)" d="M928-768L96-768Q70-768 48-755Q26-742 13-720Q0-698 0-672Q0-649 10-629Q20-609 38-595L474-269Q491-256 512-256Q533-256 550-269L986-595Q1004-609 1014-629Q1024-649 1024-672Q1024-698 1011-720Q998-742 976-755Q954-768 928-768M435-218L0-544L0-128Q0-93 17-63.500Q34-34 63.500-17Q93 0 128 0L896 0Q931 0 960.500-17Q990-34 1007-63.500Q1024-93 1024-128L1024-544L589-218Q555-192 512-192Q469-192 435-218"/>
+          </svg>
         </a>
       </div>
       
@@ -297,6 +304,22 @@
         </div>
       </div>
 
+      <!-- 聚合直播 -->
+      <div class="group-item">
+        <a class="group-item-icon" href="https://live.zrfme.com" target="_blank">
+          <img class="group-item-icon-img" src="/img/live.webp" alt="聚合直播-icon" title="聚合直播">
+        </a>
+        <div class="group-info-group">
+          <div class="group-info">
+            <a class="title" href="https://live.zrfme.com" target="_blank">聚合直播<sup class="new">新品</sup></a>
+            <a class="discription" href="https://live.zrfme.com" target="_blank">聚合全网热门直播内容</a>
+          </div>
+          <div class="group-info-button">
+            <a class="linkbutton" href="https://live.zrfme.com" target="_blank">访问</a>
+          </div>
+        </div>
+      </div>
+
       <!-- 订阅转换 -->
       <div class="group-item">
         <a class="group-item-icon" href="https://d.zrf.me/sub/" target="_blank">
@@ -421,6 +444,23 @@
     <h2 class="group-title">站点</h2>
     <span class="group-description">已部署的开源服务，欢迎探索。</span>
     <div class="group-items">
+
+      <!-- Htools -->
+      <div class="group-item">
+        <a class="group-item-icon" href="https://htools.zrf.me/" target="_blank" rel="noopener nofollow">
+          <img class="group-item-icon-img" src="/img/htools.webp" alt="Htools-icon" title="Htools" style="background: #000; border-radius: 50%;">
+        </a>
+        <div class="group-info-group">
+          <div class="group-info">
+            <a class="title" href="https://htools.zrf.me/" target="_blank" rel="noopener nofollow">Htools<sup class="new">新品</sup></a>
+            <a class="discription" href="https://htools.zrf.me/" target="_blank"
+              rel="noopener nofollow">精选开源工具与资源</a>
+          </div>
+          <div class="group-info-button">
+            <a class="linkbutton" href="https://htools.zrf.me/" target="_blank" rel="noopener nofollow">访问</a>
+          </div>
+        </div>
+      </div>
 
       <!-- UpTime -->
       <div class="group-item">
@@ -636,6 +676,5 @@
 <script src="/js/simpleParallax.min.js"></script>
 <script src="/js/main.js"></script>
 <script defer src="https://um.liushen.fun/script.js" data-website-id="3d219e8f-0c3d-4136-b58d-bd07c7d8a299"></script>
-<script defer src="https://umami.zrf.me/script.js" data-website-id="b01d188d-af4c-4256-9c7a-5d9a24fa01a3"></script>
 
 </html>

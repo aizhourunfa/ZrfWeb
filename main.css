@@ -211,6 +211,13 @@ img {
   display: none;
 }
 
+.nav-menu svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  fill: currentColor;
+}
+
 a.site-logo {
   display: flex;
   align-items: center;
@@ -569,9 +576,11 @@ a.second-link:hover {
   padding: 0 16px;
 }
 
-.about-button.social-button i {
-  font-size: 20px;
-  line-height: 1;
+.about-button.social-button svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: currentColor;
 }
 
 .special-card {
