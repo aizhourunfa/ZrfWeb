@@ -13,6 +13,9 @@ jobs:
     name: Sync latest commits from upstream repo
     runs-on: ubuntu-latest
 
+    # 仅在 fork 仓库执行，源仓库自身不执行同步
+    if: ${{ github.event.repository.fork }}
+
     steps:
       - name: Checkout target repo
         uses: actions/checkout@v6
@@ -21,7 +24,7 @@ jobs:
         id: sync
         uses: aormsby/fork-sync-with-upstream-action@v3.4.3
         with:
-          upstream_sync_repo: zhheo/HeoWeb
+          upstream_sync_repo: shaoyouvip/ZrfWeb
           upstream_sync_branch: main
           target_sync_branch: main
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -30,6 +33,6 @@ jobs:
       - name: Sync check
         if: failure()
         run: |
-          echo "[Error] 同步上游 zhheo/HeoWeb 失败，请检查 Actions 日志。"
-          echo "[Error] Failed to sync from upstream zhheo/HeoWeb. Please check the Actions log."
+          echo "[Error] 同步上游 shaoyouvip/ZrfWeb 失败，请检查 Actions 日志。"
+          echo "[Error] Failed to sync from upstream shaoyouvip/ZrfWeb. Please check the Actions log."
           exit 1
